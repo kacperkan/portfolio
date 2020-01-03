@@ -1,6 +1,8 @@
 import React from 'react';
 import { Card, CardBody, CardText, CardTitle } from 'reactstrap';
 import './Parts.css';
+import researchEntries from './ResearchEntries';
+import './ResearchEntry.css';
 
 const Intro = () => {
 	return (
@@ -32,8 +34,8 @@ const Intro = () => {
 						objects.
 					</p>
 					<p>
-						My BSc thesis focused on an automatic american sign language
-						fingerspelling recognition, and the MSc thesis - on a parallelizing
+						My BSc thesis focused on an automatic American Sign Language
+						fingerspelling recognition, and the MSc thesis - on parallelizing
 						selective attention in neural networks.
 					</p>
 				</CardText>
@@ -51,8 +53,8 @@ const News = () => {
 				</CardTitle>
 				<CardText className="cards-text">
 					<p>
-						26/10/2019 - I had an opportunity to talk to many interesting
-						people at ICCV conference in Seoul.
+						26/10/2019 - I had an opportunity to be present and meet many
+						interesting people at ICCV conference in Seoul.
 					</p>
 					<p>
 						01/10/2019 - I officially started PhD at Wrocław University Of
@@ -65,12 +67,19 @@ const News = () => {
 };
 
 const Research = () => {
+	const entries = [];
+	researchEntries.forEach((entry) => {
+		entries.push(<hr className="research-entry-delimiter" />);
+		entries.push(entry);
+	});
+	entries.push(<hr className="research-entry-delimiter" />);
 	return (
 		<Card>
 			<CardBody>
 				<CardTitle>
 					<strong>Research</strong>
 				</CardTitle>
+				<CardText>{entries}</CardText>
 			</CardBody>
 			<CardText className="cards-text" />
 		</Card>
