@@ -1,0 +1,25 @@
+.icon-wrapper {
+	vertical-align: middle;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	height: 32px;
+	width: 32px;
+}
+.icon {
+	font-size: 1.3em;
+	text-align: center;
+	vertical-align: sub;
+	height: 32px;
+	width: 32px;
+}
+
+span {
+	text-align: center;
+	vertical-align: sub;
+}
+
+.link {
+	text-align: center;
+	font-size: 0.8em;
+}

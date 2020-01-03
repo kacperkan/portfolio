@@ -1,0 +1,31 @@
+.menu-option {
+	text-align: center;
+}
+
+.menu-icon-wrapper {
+	vertical-align: middle;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	height: 32px;
+	width: 32px;
+}
+
+.menu-icon-text {
+	color: #23001e !important;
+	text-align: center;
+	margin-top: .3em;
+}
+
+.menu-icon {
+	font-size: 3em;
+	text-align: center;
+	color: #23001e !important;
+	height: 32px;
+	width: 32px;
+}
+
+.menu-option a {
+	color: #23001e !important;
+	text-align: center;
+}

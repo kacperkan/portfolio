@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Container, Row, Col } from 'reactstrap';
 import './App.css';
+import Sidebar from './Sidebar';
+import Main from './Main';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const date = new Date();
+	const year = date.getFullYear();
+	return (
+		<React.Fragment>
+			<Container fluid>
+				<Row>
+					<Col md={{ size: 2, offset: 1 }} style={{ padding: 0 }}>
+						<Sidebar />
+					</Col>
+					<Col md={{ size: 6 }}>
+						<Main />
+					</Col>
+				</Row>
+				<footer>
+					<hr style={{ marginTop: 0 }} />
+					<a href="/">© {year} Copyright: Kacper Kania</a>
+				</footer>
+			</Container>
+		</React.Fragment>
+	);
+};
 
 export default App;
