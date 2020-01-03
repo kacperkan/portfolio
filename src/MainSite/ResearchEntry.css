@@ -1,0 +1,57 @@
+.research-entry-wrapper {
+	display: flex;
+	flex-direction: row;
+	padding: 1em 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1em !important;
+	align-items: stretch;
+	align-content: center;
+}
+
+.research-entry-delimiter {
+	margin: 0 2em;
+}
+
+.research-entry-wrapper .img-wrapper {
+	height: 100%;
+	flex-shrink: 1;
+	align-self: center;
+}
+
+.research-entry-wrapper .txt-wrapper {
+	height: 100%;
+	vertical-align: middle;
+	text-align: left;
+	margin-left: 1em;
+	flex-grow: 3;
+	align-self: center;
+}
+
+.img-wrapper img {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 8em;
+	border: 1px solid gainsboro;
+}
+
+.article-title {
+	font-weight: bolder;
+	font-size: medium;
+}
+
+.article-authors {
+	font-weight: lighter;
+}
+
+.article-abstract {
+	font-size: small;
+}
+
+.article-info {
+	font-weight: normal;
+}
+
+.article-links {
+	font-weight: normal;
+}
