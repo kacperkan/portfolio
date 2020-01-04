@@ -108,8 +108,8 @@ const MainBlock = () => {
 
 const App = () => {
 	return (
-		<React.Fragment>
-			<div className="wrapper">
+		<div className="wrapper">
+			<div className="content-wrapper">
 				<Container fluid>
 					<Row>
 						<Side />
@@ -118,7 +118,7 @@ const App = () => {
 				</Container>
 			</div>
 			<Footer />
-		</React.Fragment>
+		</div>
 	);
 };
 
