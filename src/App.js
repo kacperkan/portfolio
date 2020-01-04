@@ -108,13 +108,17 @@ const MainBlock = () => {
 
 const App = () => {
 	return (
-		<Container fluid>
-			<Row>
-				<Side />
-				<MainBlock />
-			</Row>
+		<React.Fragment>
+			<div className="wrapper">
+				<Container fluid>
+					<Row>
+						<Side />
+						<MainBlock />
+					</Row>
+				</Container>
+			</div>
 			<Footer />
-		</Container>
+		</React.Fragment>
 	);
 };
 

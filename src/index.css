@@ -8,7 +8,6 @@ html {
 body {
 	background-color: whitesmoke !important;
 	color: #151515 !important;
-	padding-top: 3em;
 	overflow-x: hidden;
 }
 
@@ -27,32 +26,6 @@ a:hover {
 	border: 1px solid black;
 }
 
-footer {
-	width: 100%;
-	display: block;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	padding: 0 0.5em 1em;
-	text-align: center;
-	color: whitesmoke;
-	width: 100%;
-	font-size: 0.7em;
-	background-color: #20a39e;
-}
-
-footer hr {
-	margin-bottom: 1em;
-}
-
-footer a,
-footer a:hover,
-footer a:active,
-footer a:link,
-footer a:focus,
-footer a:visited {
-	color: whitesmoke !important;
-}
 /*
 #D81A21
 #821014

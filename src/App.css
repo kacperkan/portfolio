@@ -33,3 +33,34 @@
 	color: #23001e !important;
 	text-align: center;
 }
+
+.wrapper {
+	min-height: 95vh;
+	padding-top: 3em;
+}
+
+footer {
+	width: 100%;
+	height: 4vh;
+	display: block;
+	position: relative;
+	padding: 0 0.5em 1em;
+	margin-top: 1vh;
+	text-align: center;
+	color: whitesmoke;
+	font-size: 0.7em;
+	background-color: #20a39e;
+}
+
+footer hr {
+	margin-bottom: 1em;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:link,
+footer a:focus,
+footer a:visited {
+	color: whitesmoke !important;
+}
